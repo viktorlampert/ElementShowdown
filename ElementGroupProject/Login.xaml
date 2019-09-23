@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="ElementGroupProject.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ElementGroupProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Beige">
+        <TextBlock FontFamily="Gill Sans MT" Text="Enter Username" FontSize="100" HorizontalAlignment="Center" Margin="400,353,400,-353" />
+        <TextBox x:Name="Username"  VerticalAlignment="Center" Width="200" Margin="647,517,653,451"/>
+        <Button x:Name="gotofiled"  Content="Next" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="720,582,728,386" Click="gotofiled_Click"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="ElementGroupProject.field"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ElementGroupProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background= "Beige">
+
+
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:card x:Name="Card1" Tapped="Card1_Tapped"  Margin="30,250,30,-190"/>
+            <local:card x:Name="Card2" Tapped="Card2_Tapped"  Margin="30,250,30,-190" />
+            <local:card x:Name="Card3" Tapped="Card3_Tapped"  Margin="30,250,30,-190"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <local:card x:Name="CompCardSelect" Margin="30,0,0,200"/>
+            <local:card x:Name="PlayerCardSelect" Margin="30,0,0,200"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <TextBlock FontFamily="Gill Sans MT" FontSize="30" Margin="0,10,0,0" Text="Player Score:"/>
+            <TextBlock FontFamily="Gill Sans MT" FontSize="30" Margin="0,10,20,0" x:Name="Playerscore" Text=""/>
+            <TextBlock FontFamily="Gill Sans MT" FontSize="30" Margin="20,10,0,0" Text="Computer Score:"/>
+            <TextBlock FontFamily="Gill Sans MT" FontSize="30" Margin="0,10,0,0" x:Name="Computerscore" Text=""/>
+        </StackPanel>
+
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <local:card x:Name="compCard1" Tapped="Card1_Tapped"  />
+            <local:card x:Name="compCard2" Tapped="Card2_Tapped"  Margin="60" />
+            <local:card x:Name="compCard3" Tapped="Card3_Tapped"  />
+        </StackPanel>
+
+
+        <TextBlock FontFamily="Gill Sans MT"  x:Name="donegame" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="100"/>
+        <Button x:Name="Returnhome" Content="Return Home" HorizontalAlignment="Center" Margin="696,594,696,374" Visibility="Collapsed" IsEnabled="False" Click="Returnhome_Click"/>
+        <Button x:Name="playAgain" Content="Play Again" HorizontalAlignment="Center" Margin="705,642,705,326" Visibility="Collapsed" IsEnabled="False" Click="playAgain_Click"/>
+
+
+    </Grid>
+</Page>
